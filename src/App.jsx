@@ -15,7 +15,7 @@ import Signup from "./pages/Signup";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./ui/AppLayout";
 import Booking from "./features/bookings/Booking";
-import Checkin from "./pages/CheckIn";
+import Checkin from "./pages/Checkin";
 import ProtectedRoute from "./ui/ProtectedRoute";
 import { DarkModeProvider } from "./context/DarkModeContext";
 

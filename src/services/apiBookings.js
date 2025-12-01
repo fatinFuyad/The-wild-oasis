@@ -70,11 +70,7 @@ export async function getBookingsAfterDate(date) {
     console.error(error);
     throw new Error("Bookings could not get loaded");
   }
-  if (data) {
-    console.log(data);
-    console.log(date);
-    console.log(getToday());
-  }
+
   return data;
 }
 
@@ -117,12 +113,7 @@ export async function getStaysTodayActivity() {
 }
 
 export async function updateBooking(id, obj) {
-  const { data, error } = await supabase
-    .from("bookings")
-    .update(obj)
-    .eq("id", id)
-    .select()
-    .single();
+  const { data, error } = await supabase.from("bookings").update(obj).eq("id", id).select().single();
 
   if (error) {
     console.error(error);

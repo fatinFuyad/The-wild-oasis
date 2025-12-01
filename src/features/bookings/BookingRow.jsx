@@ -16,7 +16,7 @@ import Tag from "../../ui/Tag";
 import Menus from "../../ui/Menus";
 import Modal from "../../ui/Modal";
 import Table from "../../ui/Table";
-import { useCheckout } from "../check-in-out/useCheckOut";
+import { useCheckout } from "../check-in-out/useCheckout";
 import { useDeleteBooking } from "./useDeleteBooking";
 import ConfirmDelete from "../../ui/ConfirmDelete";
 
